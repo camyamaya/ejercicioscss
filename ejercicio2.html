@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .delay-0 {
+    animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+    }
+
+    .delay-1500 {
+        animation-name: move;
+        animation-delay: 1500s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .delay-5 {
+        animation-name: move;
+        animation-delay: 5s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    
+    .delay-neg-500 {
+        animation-name: move;
+        animation-delay: -500ms;
+        animation-duration: 3s;
+        animation-fill-mode:forwards
+    }
+
+    div {
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        border-radius: 25px;
+        position: relative;
+    }
+    
+    @keyframes move {
+        from{
+            left: 0 
+        }
+        to{
+            left: 400px;
+        }
+        }
+     </style>
+
+</head>
+<body>
+    
+    <h1> Delay: 0s (Por defecto ese es el tiempo de retraso para que haga el efecto)</h1>
+    <div class="delay-0"></div>
+    <h1> Delay: 0s (Por defecto ese es el tiempo de retraso para que haga el efecto)</h1>
+    <div class="delay-0"></div>
+    <h1> Delay: 0s (Por defecto ese es el tiempo de retraso para que haga el efecto)</h1>
+    <div class="delay-0"></div>
+    <h1> Delay: 0s (Por defecto ese es el tiempo de retraso para que haga el efecto)</h1>
+    <div class="delay-0"></div>
+<br>
+
+</body>
+</html>

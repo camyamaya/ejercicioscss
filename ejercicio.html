@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    padding-top: 30px;
+    max-width: 980px;
+}
+
+.box1 {
+    width: 300px;
+    height: 50px;
+    background: #4169e1;
+    animation: ejemplo 2s infinite;
+    animation-direction: normal;
+}
+
+.box2{
+    width: 300px;
+    height: 50px;
+    background: #4169e1;
+    animation: ejemplo 2s infinite;
+    animation-direction: reverse;
+}
+
+.box3{
+    width: 300px;
+    height: 50px;
+    background: #4169e1;
+    animation: ejemplo 2s infinite;
+    animation-direction: alternate;
+
+}
+
+.box4{
+    width: 300px;
+    height: 50px;
+    background: #4169e1;
+    animation: ejemplo 2s infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ejemplo {
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 150px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+
+</style>
+<body>
+    <div class="main">
+    <div class="box1">
+        <p>normal</p>
+</div>
+
+<div class="box2">
+<div class="box2">
+    <p>reverse</p>
+</div>
+
+<div class="box3">
+<div class="box3">
+        <p>alternate</p>
+</div>
+
+<div class="box4">
+<div class="box4">
+    <p>alternate-reverse</p>
+</div>
+
+</div>
+</body>
+</html>
